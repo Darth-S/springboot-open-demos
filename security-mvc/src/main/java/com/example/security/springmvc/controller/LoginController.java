@@ -4,7 +4,6 @@ import com.example.security.springmvc.model.AuthenticationRequest;
 import com.example.security.springmvc.model.UserDto;
 import com.example.security.springmvc.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
