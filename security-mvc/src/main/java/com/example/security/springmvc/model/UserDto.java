@@ -1,5 +1,7 @@
 package com.example.security.springmvc.model;
 
+import java.util.Set;
+
 public class UserDto {
     public static final String SESSION_USER_KEY = "_user";
     private String id;
@@ -7,6 +9,24 @@ public class UserDto {
     private String password;
     private String fullName;
     private String mobile;
+    private Set<String> authorities;
+
+    public Set<String> getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(Set<String> authorities) {
+        this.authorities = authorities;
+    }
+
+    public UserDto(String id, String username, String password, String fullName, String mobile, Set<String> authorities) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.fullName = fullName;
+        this.mobile = mobile;
+        this.authorities = authorities;
+    }
 
     public UserDto(String id, String username, String password, String fullName, String mobile) {
         this.id = id;
