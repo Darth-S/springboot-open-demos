@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /security-boot
+spring:
+  application:
+    name: security-boot
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: userdb
